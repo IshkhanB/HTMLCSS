@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+
+    .layout{
+      text-transform:uppercase ;
+      margin: 50px auto;
+      max-width: 800px;
+      color: white;
+
+    }
+    .layout header{
+      background-color: rgb(169, 201, 201);
+      padding: 20px 40px;
+    }
+    .layout nav, .layout footer{
+      background-color: rgb(169, 201, 201);
+      padding: 10px 40px;
+      margin: 20;
+
+    }
+    .layout aside, .layout main{
+      background-color: rgb(169, 201, 201);
+      padding: 10px 40px;
+    }
+    .layout aside{
+margin: bottom 10px; ;
+    }
+    .layout section {
+      background-color: rgb(169, 201, 201);
+      padding: 5px 40px 60px;
+    }
+    .layout main {
+     width: 600px;
+    }
+    .layout .flex{
+      display: flex;
+      gap: 10px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    </style>
 </head>
+
 <body>
-  
+  <div class="layout">
+    <header>header</header>
+    <nav>menu</nav>
+    <div>
+      <aside>aside1</aside>
+      <aside>aside2</aside>
+      <main>main content
+        <section>section1</section>
+        <section>section2</section>
+      </main>
+      <aside>aside3</aside>
+    </div>
+  </div>
+  <div>footer</div>
 </body>
+
 </html>
