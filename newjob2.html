@@ -5,15 +5,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    footer {
+      background-color: #2a4f6e;
+      padding: 20px 40px;
+      color: white;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    /* hover */
+    
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 10px;
+    }
+
+    .flex p {
+      margin: 6px 0;
+    }
+  </style>
 </head>
 
 <body>
-  <div>
-    <div>
-
+  <footer>
+    <div class="flex">
+      <div >
+        <p><a href="">Home</a></p>
+        <p><a href="">About</a></p>
+        <p><a href="">Gallery</a></p>
+        <p><a href="">News</a></p>
+      </div>
+      <div >
+        <p><a href="">Blog</a></p>
+        <p><a href="">FAQ</a></p>
+        <p><a href="">Contacts</a></p>
+        <p><a href="">Privacy & cookies</a></p>
+      </div>
+      <div class="flex">
+        <img src="img/fb.png" alt="">
+        <img src="img/insta.png" alt="">
+        <img src="img/youtube.png" alt="">
+      </div>
     </div>
-
-  </div>
+    <hr style="color: white">
+    <p style="text-align: center;">Copyright &copy; Company 2018-2019 </p>
+  </footer>
 </body>
 
 </html>
