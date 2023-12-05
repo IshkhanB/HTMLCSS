@@ -1,324 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- favicon -->
-  <link rel="shortcut icon" href="img/snake.svg">
-  <style>
-    body {
-      max-width: 1200px;
-      margin: 20px auto;
-      background-color: rgb(144, 165, 183);
-      padding: 20px;
-      /* font-family: Lato, Verdana, Geneva, sans-serif; */
-      font-family: 'Courier New', Courier, monospace;
-    }
-
-    a {
-      display: inline-block;
-      padding: 5px;
-      border-radius: 10px;
-      color: black;
-      text-decoration: none;
-      background-color: aquamarine;
-      margin-bottom: 3px;
-      font-family: Lato, Verdana, Geneva, sans-serif;
-    }
-
-    a:hover {
-      background-color: aqua;
-    }
-
-    .teal {
-      background-color: teal;
-    }
-
-    .witeText {
-      color: white;
-    }
-
-    #PZ1 {
-      background-color: hsl(35, 100%, 50%);
-    }
-
-    #PZ1:hover {
-      background-color: aqua;
-    }
-
-    p {
-      /* font: [font-style | font-variant | font-weight | font-stretch] font-size [/line-height] font-family | inherit */
-      font: normal 16px/20px Tahoma;
-      text-align: justify;
-
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    .dotted {
-      text-decoration: underline dotted;
-    }
-
-    .big-first-letter p::first-letter {
-      font-size: 20px;
-    }
-
-    p::selection {
-      background-color: brown;
-      color: aliceblue;
-    }
-
-    .experiment {
-      /* list-style-type: decimal (по умолчанию, можно не 
- указывать) | decimal-leading-zero | armenian | 
- georgian | lower-alpha | lower-greek | lower-latin |
- lower-roman | upper-alpha | upper-latin | 
- upper-roman */
-      list-style-type: none;
-      list-style-image: url(img/snake.svg);
-      /* Поставить маркер внутрь элемента (по умолчанию снаружи) */
-      list-style-position: inside;
-      /* list-style: list-style-type list-style-position 
- list-style-image;
- */
-    }
-
-    .experiment li {
-      height: 25px;
-    }
-
-    .experiment li:hover {
-      list-style-image: url(img/snake2.svg);
-    }
-    blockquote {
-      margin: 20px auto;
-      width: 400px;
-      text-align: center;
-      position: relative;
-    }
-    blockquote::before {
-      position: absolute;
-      left: -30px;
-      content: '<<';
-    }
-    blockquote::after {
-      content: '>>';
-      right: -30px;
-      position: absolute;
-    }
-    .radius {border-radius: 20px;}
-    img:hover {
-      opacity: 0.5;
-    }
-    .shadow {box-shadow: -6px -6px 6px #a7a7a7;}
-    .around-shadow {
-      box-shadow: 0 0 8px 
-      rgba(0, 0, 0, 0.65);
-      }
-
-      /* background-color: red | #ff0000 | #f00 | 
- rgb(255, 0, 0) | 
- rgba(255, 0, 0, .7) | 
- transparent (по умолчанию */
- 
-      /* background-image: none (по умолчанию)| 
- url(путь_к_изображению.расширение) */
-
-      /* backround-repeat: repeat (по умолчанию) | 
- no-repeat | repeat-x | repeat-y | 
- space | round  */
-
-      /* background-position: [left | center | right | % | px, 
- em, pt и др.] 
- [top | center | bottom | % | px,
- em, pt и др. */
-
-      /* background-size: [ размер в px, pt, em, rem и др. | % |
- auto ]{1,2} | cover | contain */
-
-      /* background-attachment fixed | scroll | local */
-
-      #rools {
-        background: url(img/original.jpg) 82% 26%/234px no-repeat, url(img/original.jpg) 28% 26%/234px no-repeat;
-      }
-  </style>
-  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <h1>Romeo and Juliet</h1>
+  <h2>PROLOGUE</h2>
+  <pre>
 
-  <h1>Для начала работы дома</h1>
-
-  <blockquote>
-    Ученье свет, а не ученье - тьма.
-  </blockquote>
-
-  <p>
-    ⊃ &sup; &#8835; &lt;p&gt; Текст параграфа &lt;/p&gt; <span class="dotted">HTML</span>
-  </p>
-
-  <pre aria-label="Изображение кота, собранное из текстовых символов.">
-              /\„„./\
-             (='•'=  )
-             (") „. (")
-              \,\„„/,/
-              │„„. „│
-              /„/„\„\
-             („) ''(„)
-                 ((
-                  ))
-                 ((
+    Two households, both alike in dignity,
+    
+    In fair Verona, where we lay our scene,
+    
+    From ancient grudge break to new mutiny,
+    
+    Where civil blood makes civil hands unclean.
+    
+    From forth the fatal loins of these two foes
+    
+    A pair of star-cross'd lovers take their life;
+    
+    Whose misadventured piteous overthrows
+    
+    Do with their death bury their parents' strife.
+    
+    The fearful passage of their death-mark'd love,
+    
+    And the continuance of their parents' rage,
+    
+    Which, but their children's end, nought could remove,
+    
+    Is now the two hours' traffic of our stage;
+    
+    The which if you with patient ears attend,
+    
+    What here shall miss, our toil shall strive to mend.
+    
+    SCENE I. Verona. A public place.
   </pre>
-
-  <ol>
-    <li><a
-        href="https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe">Установить
-        git</a></li>
-    <li><a href="https://code.visualstudio.com/Download">VS Code</a></li>
-    <li>Ввести в терминал VS Code (открывается комбинацией клавиш CTRL+~)
-      <ul>
-        <li>git config --global user.name "Ваше имя"</li>
-        <li>git config --global user.email вашапочта@домен.ру</li>
-      </ul>
-    </li>
-    <li>Клонировать <span>Репозиторий</span> git</li>
-  </ol>
-
-  <a id="PZ1" class="witeText" href="pz1.html">ПЗ 1</a>
-
-  <a class="teal witeText" href="https://validator.w3.org/">Валидатор 1</a>
-  <a style="color: red;" href="https://html5.validator.nu">Валидатор 2</a>
-
-
-  <a href="https://disk.yandex.ru/d/LADtnZajP19xeQ">Яндекс.Диск</a>
-  <a class="teal witeText" href="https://doka.guide/html/flow/">Поток документа</a>
-  <a class="teal witeText" href="https://doka.guide/css/box-model/">Блочная модель</a>
-
-  <div>
-    <h2>Списки</h2>
-    <ul class="experiment">
-      <li class="li">gfdsgsdf</li>
-      <li>gfdsgsdfsdfsdf</li>
-      <li>gfdsgsdfsdfsdf</li>
-      <li>gfdsgsdfsdfsdf</li>
-      <li>gfdsgsdfsdfsdf</li>
-      <li>gfdsgsdfsdfsdf</li>
-      <li>gfdsgsdfsdfsdf</li>
-    </ul>
-  </div>
-
-  <dl>
-    <dt>Термин 1</dt>
-    <dd>Описание термина 1</dd>
-    <dt>Термин 2</dt>
-    <dd>Описание термина 2</dd>
-    <dt>Термин 3</dt>
-    <dd>Описание термина 3</dd>
-  </dl>
-
-  <ol>
-    <li>Площади
-      <ol type="a">
-        <li>Дворцовая площадь</li>
-        <li>Рыночная площадь</li>
-      </ol>
-    </li>
-    <li>Замки
-      <ul>
-        <li>Королевский замок</li>
-        <li>Вилянувский дворец</li>
-      </ul>
-    </li>
-    <li>Старе Място</li>
-    <li>Музеи
-      <ul>
-        <li>Исторический музей</li>
-        <li>Музей Войска Польского</li>
-        <li>Музей карикатуры</li>
-        <li>Музей Марии Кюри</li>
-        <li>Музей Шопена</li>
-        <li>Национальный музей</li>
-      </ul>
-    </li>
-    <li>Краковское предместье</li>
-  </ol>
-
-
-
-  <div>
-    <h1>Теги HTML</h1>
-    <a href="#heading6">Последний заголовок</a>
-    <div>
-      <h2>Строковые теги</h2>
-      <p>
-        <b><i>Текст <sup>внутри</sup> <sub>тегов</sub></i></b>
-        <span><small>Тег, который ничего не делает</small></span><br>
-        <i>Просто наклонный текст</i><br>
-        <b>Просто жирный текст</b><br>
-        <em>Важная фраза, которую заметит поисковый робот (наклонный)</em><br>
-        <strong>Важная фраза, которую <br>заметит поисковый робот (жирный)</strong><br>
-        <!-- Картинка по ссылке -->
-        <img src="https://s.mediasalt.ru/cache/content/data/images/437/437165/original.jpg" alt="Горы"
-          title="Фото с видом на горы">
-        <!-- Картинка из файла -->
-      </p>
-      <hr>
-      <h3 id="heading6">Заголовок 3-го уровня</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit, nesciunt numquam quasi nobis
-        exercitationem aliquam ab ex? Repellat tempore alias saepe dolore magnam ipsum corrupti provident et tenetur
-        minima!</p>
-      </div>
-      
-      <div class="big-first-letter">
-        <h2>Блочные теги</h2>
-        <blockquote>Блочная цитата</blockquote>
-        <img src="img/original.jpg" class="radius shadow around-shadow" style="float: left; margin-right: 10px; width: 40%;" alt="Горы" title="Фото с видом на горы">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit, nesciunt numquam quasi nobis
-          exercitationem aliquam ab ex? Repellat tempore alias saepe dolore magnam ipsum corrupti provident et tenetur
-        minima!</p>
-      <h3 style="clear: both;">Заголовок 3-го уровня</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit, nesciunt numquam quasi nobis
-        exercitationem aliquam ab ex? Repellat tempore alias saepe dolore magnam ipsum corrupti provident et tenetur
-        minima!</p>
-      <h4>Заголовок 4-го уровня</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit, nesciunt numquam quasi nobis
-        exercitationem aliquam ab ex? Repellat tempore alias saepe dolore magnam ipsum corrupti provident et tenetur
-        minima!</p>
-      <h5>Заголовок 5-го уровня</h5>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit, nesciunt numquam quasi nobis
-        exercitationem aliquam ab ex? Repellat tempore alias saepe dolore magnam ipsum corrupti provident et tenetur
-        minima!</p>
-      <h6>Заголовок 6-го уровня</h6>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit, nesciunt numquam quasi nobis
-        exercitationem aliquam ab ex? Repellat tempore alias saepe dolore magnam ipsum corrupti provident et tenetur
-        minima!</p>
-    </div>
-  </div>
-
-  <div id="rools">
-    <h1>Правила HTML</h1>
-    <ol>
-      <li>Все пробелы, табуляция и начало новых строк преобразуются в обычный пробел. Поэтому очень желательно
-        форматировать текст
-        с отступами</li>
-      <li>Весь текст должен быть отформатирован в виде тегов. Обязательно присутствуют открывающий и закрывающий тег
-      </li>
-      <li>Если у элемента нет содержимого, закрывающий тег ему НЕ нужен</li>
-      <li>Всегда должны быть теги основы: html, head, body</li>
-      <li>Правило «матрешки»: всегда соблюдать вложенность элементов и не допускать их пересечения</li>
-      <li>Значения атрибутов всегда берутся в кавычки</li>
-      <li>Атрибутов у элемента может быть несколько, они отделяются друг от друга пробелами</li>
-      <li>Универсальными атрибутами для всех тегов являются: id, class, style, title, tabindex</li>
-      <li>Комментарии в HTML предназначены для того, чтобы скрыть часть кода и записываются так:</li>
-    </ol>
-  </div>
-
+    
+  
 </body>
-
 </html>
