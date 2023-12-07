@@ -11,17 +11,28 @@
       padding: 20px 40px;
       color: white;
     }
+
     a {
       color: white;
       text-decoration: none;
     }
+
     /* hover */
-    
+
     .flex {
       display: flex;
       align-items: center;
       justify-content: space-around;
       gap: 10px;
+      /* display: flex; */
+    }
+    img {
+      filter: grayscale(1);
+      
+    }
+
+    img:hover {
+      filter: grayscale(0);
     }
 
     .flex p {
@@ -33,13 +44,13 @@
 <body>
   <footer>
     <div class="flex">
-      <div >
+      <div>
         <p><a href="">Home</a></p>
         <p><a href="">About</a></p>
         <p><a href="">Gallery</a></p>
         <p><a href="">News</a></p>
       </div>
-      <div >
+      <div>
         <p><a href="">Blog</a></p>
         <p><a href="">FAQ</a></p>
         <p><a href="">Contacts</a></p>
