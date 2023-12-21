@@ -1,20 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-   
-   
+    .home {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+
+    .block {
+      display: flex;
+      transition: 0.3s;
+
+    }
+    .block2 {
+      overflow: hidden;
+      width: 400px;
+      height: 400px;
+
+
+    }
+
+    .blockr {
+      flex-direction: row-reverse;
+    }
+
+    .block1 {
+      display: flex;
+      width: 400px;
+      height: 400px;
+      background-color: rgb(214, 211, 209);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .block:hover  {
+      filter: brightness(50%);
+      transition: 0.3s;
+      
+    }
+    .block:hover img {
+      transform: scale(1.5);
+      transition: 1s;
+
+    }
+    .block img {
+      
+      transition: 1s;
+
+    }
+    
+    .home .block:hover {
+           
+      background-color: #0000007e;
+      ;
+    }
   </style>
 </head>
-<body>
 
-  <div>
-    <div></div>
-    <div></div>
+<body>
+  <div class="home">
+
+    <div class="block">
+      <div class="block1">
+        <p>Hello world</p>
+      </div>
+      <div class="block2"><img height="400" src="img/apple.gif" alt=""></div>
+    </div>
+    <div class="block blockr">
+      <div class="block1">
+        <p>Hello world</p>
+      </div>
+      <div class="block2"><img height="400" src="img/apple.gif" alt=""></div>
+    </div>
+    <div class="block">
+      <div class="block1">
+        <p>Hello world</p>
+      </div>
+      <div class="block2"><img height="400" src="img/apple.gif" alt=""></div>
+    </div>
   </div>
-    
 </body>
+
 </html>
