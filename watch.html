@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch</title>
+  <style>
+    body{
+      display: flex;
+    align-content: flex-start;
+    justify-content: flex-end;
+    }
+    .frame {
+      width: 255px;
+      height: 255px;
+      border: 3px crimson solid;
+      border-radius: 50%;
+      margin: 20px;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+    justify-content: center;
+    }
+    .watch div {
+      position: absolute;
+    }
+    .watch {
+      display: flex;
+      width: 250px;
+      height: 250px;
+      border: 4px crimson dashed;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .seconds {
+      position: relative;
+      width: 2px;
+      height: 90px;
+      background-color: blue;
+      transform-origin: bottom center;
+      top: 73px;
+      animation: time 60s steps(60) infinite;
+    }
+    .minutes {
+      position: relative;
+      width: 3px;
+      height: 75px;
+      background-color: rgb(34, 86, 67);
+      transform-origin: bottom center;
+      top: 88px;
+      animation: time 3600s linear infinite;
+    }
+    .hours {
+      position: relative;
+      width: 4px;
+      height: 60px;
+      background-color: rgb(20, 20, 77);
+      transform-origin: bottom center;
+      top: 103px;
+      animation: time 86400s steps(60) infinite;
+    }
+    .center {
+      width: 10px;
+      height: 10px;
+      background-color: rgba(165, 42, 42, 0.247);
+      border-radius: 50%;
+
+    }
+    @keyframes time{
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="watch">
+      <div class=" seconds"></div>
+      <div class="minutes"></div>
+      <div class="hours"></div>
+      <div class="center"></div>
+    </div>
+  </div>
+</body>
+</html>
