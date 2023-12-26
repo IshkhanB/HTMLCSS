@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>26.12.23.</title>
+  <style>
+    .home {
+      display: flex;
+    width: 1080px;
+    height: 40px;
+    border: 3px blue solid;
+    }
+    .box1 {
+      width: 30px;
+      height: 40px;
+      background-color: rgb(60, 255, 35);
+      animation: tik 5s linear alternate infinite;
+      /* animation: tik 10s reverse ; */
+    }
+    .box2 {
+      width: 30px;
+      height: 40px;
+      background-color: rgb(252, 0, 0);
+      animation: tik 10s linear alternate infinite;
+      /* animation: tik 10s reverse ; */
+    }
+    .box3 {
+      margin: 0;
+      width: 30px;
+      height: 40px;
+      background-color: rgb(67, 7, 250);
+      animation: tik 20s linear alternate infinite;
+      /* animation: tik 10s reverse ; */
+    }
+    @keyframes tik {
+      form { 
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(1050px);
+
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="home">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </div>
+  
+</body>
+</html>
