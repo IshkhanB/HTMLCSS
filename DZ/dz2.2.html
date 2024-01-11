@@ -40,9 +40,18 @@
     }
 
 
-    .activ {
-      filter: grayscale(1)
+    ul li.activ {
+      /* filter: grayscale(1) */
+      background-color: grey;
     }
+    
+    .activ span {
+      text-decoration: black solid line-through;
+    }
+
+li span {
+  padding: 0 20px 0 10px;
+}
 
     /* span {
       filter: grayscale(0)
@@ -55,19 +64,18 @@
   <div>
     <h1>My To Do List</h1>
     <ul>
-      <li>&#657985; &nbsp; Hit the gym &nbsp; &nbsp; &#10060;</li>
-      <li class="activ">&#128505;&nbsp; <strike>Pay bills</strike> &nbsp; &nbsp; <span
-          style="filter: grayscale(0)">&#10060;</span></li>
-      <li>&#657985;&nbsp; Meer John &nbsp; &nbsp; </li>
-      <li>&#657985;&nbsp; Buy eggs &nbsp; &nbsp; &#10060;</li>
-      <li class="activ">&#128505;&nbsp;<strike> Read a book </strike> &nbsp; &nbsp; &#10060;</li>
-      <li>&#657985;&nbsp; Organize office &nbsp; &nbsp; &#10060;</li>
-      <li>&#657985;&nbsp; Eat diner &nbsp; &nbsp; &#10060;</li>
-      <li>&#657985;&nbsp; Buy apples &nbsp; &nbsp; &#10060;</li>
-      <li>&#657985;&nbsp; Meet Gearge &nbsp; &nbsp; &#10060;</li>
-      <li>&#657985;&nbsp; Feed the cat &nbsp; &nbsp; &#10060;</li>
-      <li class="activ">&#128505;&nbsp;<strike> Write a letter </strike> &nbsp; &nbsp; &#10060;</li>
-      <li>&#657985;&nbsp; Run 1 km &nbsp; &nbsp; &#10060;</li>
+      <li>&#657985; <span>Hit the gym</span> &#10060;</li>
+      <li class="activ">&#128505<span>Pay bills</span>&#10060;</li>
+      <li>&#657985; <span> Meer John</span>&#10060; </li>
+      <li>&#657985;<span> Buy eggs </span> &#10060;</li>
+      <li class="activ">&#128505;<span> Read a book </span> &#10060;</li>
+      <li>&#657985;<span> Organize office </span> &#10060;</li>
+      <li>&#657985;<span> Eat diner </span>&#10060;</li>
+      <li>&#657985;<span> Buy apples </span> &#10060;</li>
+      <li>&#657985;<span> Meet Gearge </span> &#10060;</li>
+      <li>&#657985;<span> Feed the cat </span> &#10060;</li>
+      <li class="activ">&#128505;<span> Write a letter  </span> &#10060;</li>
+      <li>&#657985;<span> Run 1 km </span> &#10060;</li>
 
 
     </ul>
