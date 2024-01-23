@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .border {
+      border: 1px solid rgb(102, 102, 102);
+    }
+
+    .box {
+      background-color: gray;
+    }
+
+    .flex {
+      display: flex;
+    }
+    
+    .logo {
+      padding: 10px 60px 10px 10px ;
+    }
+
+    .small {
+      height: 50px;
+      width: 50px;
+    }
+
+    
+    .big {
+      height: 300px;
+      
+      
+    }
+
+    .nav {
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    .nav ul {
+      list-style: none;
+      gap: 10px;
+      margin: o;
+      padding: 0;
+    }
+
+    .nav a {
+      text-transform: capitalize;
+      color: black;
+      text-decoration: none;
+    }
+    .content {
+      gap: 10px;
+    }
+    .wrap {
+      flex-wrap: none;
+      gap: 10px;
+    }
+    aside:last-of-type {
+      margin-top: 10px;
+    }
+    main {
+      padding: 20px;
+    }
+    aside {
+      padding: 10px;
+      width: 150px;
+    }
+
+    header, .content, footer {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="flex">
+      <div class="border logo">
+        <span>Logo</span>
+      </div>
+    </div>
+    <nav class="border flex">
+      <ul class="flex">
+        <li><a href="#">hone</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">gallery</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+      <input type="text">
+    </nav>
+  </header>
+  <div class="content">
+    <main>
+      <h1>Lorem ipsum dolo</h1>
+      <div class="box big"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nostrum. Quasi perspiciatis reiciendis
+        magnam repellendus dolorum, consequuntur dolore alias. Hic minus quod impedit nihil repudiandae praesentium!
+        Architecto, animi? Ducimus, placeat!</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </main>
+    <div>
+      <aside class="border">
+        <p>list</p>
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+          <li>item 5</li>
+        </ul>
+      </aside>
+      <aside class="border">
+        <p>list</p>
+        <div class="flex">
+          <div class="box small"></div>
+          <div class="box small"></div>
+          <div class="box small"></div>
+          <div class="box small"></div>
+          <div class="box small"></div>
+          <div class="box small"></div>
+          <div class="box small"></div>
+          <div class="box small"></div>
+
+        </div>
+      </aside>
+    </div>
+  </div>
+  <footer>Coperite 2024</footer>
+</body>
+
+</html>

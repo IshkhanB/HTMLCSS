@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center
+    }
+
+    .element {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      /* width: clamp(200px, 50%, 500px); */
+      border: 1px solid black;
+      border-radius: 15px;
+    }
+    .element1 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(208, 217, 217);
+      /* width: clamp(200px, 50%, 500px); */
+      border: 1px solid black;
+      border-radius: 15px;
+
+      order: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <div style= "flex: 0 0 200px;" class="element"></div>
+  <div style="flex-grow: 2;" class="element1"></div>
+  <div style="flex-grow: 3;" class="element"></div>
+  <div style="flex-grow: 4;" class="element"></div>
+</body>
+
+</html>
