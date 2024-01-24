@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    body {
+        background-color:rgb(248, 191, 121);
+      }
     .border {
       border: 1px solid black;
     }
@@ -24,8 +27,10 @@
     }
 
     .small {
+      overflow: auto;
       height: 50px;
       width: 50px;
+      text-align: center;
     }
 
     .big {
@@ -92,6 +97,9 @@
     }
 
     @media screen and (max-width: 1024px) {
+      body {
+        background-color:rgb(231, 214, 194);
+      }
       nav input {
         display: none;
       }
@@ -116,6 +124,9 @@
     }
 
     @media screen and (max-width: 768px) {
+      body {
+        background-color:bisque;
+      }
 
       .logo {
         padding: 0px 60px 0px 0px;
@@ -186,6 +197,9 @@
         nostrum cumque, veritatis cum voluptas ullam eos veniam fuga, aperiam, saepe ex minima quas iste!</p>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio id non voluptas est ullam. Temporibus
         nostrum cumque, veritatis cum voluptas ullam eos veniam fuga, aperiam, saepe ex minima quas iste!</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam a, sunt illum eligendi, voluptas assumenda corrupti saepe, tenetur rerum qui mollitia tempora reiciendis earum cumque? Voluptatibus sint hic quae est.
+        </p>
     </main>
     <div>
       <aside class="border">
@@ -201,14 +215,14 @@
       <aside class="border">
         <p>Lorem</p>
         <div class="flex wrap">
-          <div class="box small"></div>
-          <div class="box small"></div>
-          <div class="box small"></div>
-          <div class="box small"></div>
-          <div class="box small"></div>
-          <div class="box small"></div>
-          <div class="box small"></div>
-          <div class="box small"></div>
+          <div class="box small">one box</div>
+          <div class="box small">two box</div>
+          <div class="box small">three box</div>
+          <div class="box small">four box</div>
+          <div class="box small">five box</div>
+          <div class="box small">six box</div>
+          <div class="box small">seven box</div>
+          <div class="box small">eight box</div>
         </div>
       </aside>
     </div>
