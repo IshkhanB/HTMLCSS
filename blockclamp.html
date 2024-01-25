@@ -7,8 +7,15 @@
   <title>Document</title>
   <style>
     body {
+      flex-wrap: wrap;
       display: flex;
-      justify-content: center
+      justify-content: center;
+      background-color: rgb(161, 150, 136);
+    }
+    .border{
+      border: 1px solid black;
+      border-radius: 15px;
+
     }
 
     .element {
@@ -16,27 +23,50 @@
       height: 100px;
       background-color: aqua;
       /* width: clamp(200px, 50%, 500px); */
-      border: 1px solid black;
-      border-radius: 15px;
     }
     .element1 {
       width: 100px;
       height: 100px;
       background-color: rgb(208, 217, 217);
       /* width: clamp(200px, 50%, 500px); */
-      border: 1px solid black;
-      border-radius: 15px;
+      /* border: 1px solid black;
+      border-radius: 15px; */
 
       order: -1;
+    }
+    @media screen and (max-width:1080px) {
+      body {
+        flex-wrap: none;
+        background-color: rgb(213, 188, 156);
+      }
+      
+    }
+    @media screen and (max-width:800px) {
+      body {
+        flex-wrap: none;
+        background-color: rgb(255, 212, 156);
+      }
+      
+    }
+    @media screen and (max-width:600px) {
+      body {
+        background-color: rgb(171, 216, 246);
+        flex-wrap: wrap;
+      }
+      
     }
   </style>
 </head>
 
 <body>
-  <div style= "flex: 0 0 200px;" class="element"></div>
-  <div style="flex-grow: 2;" class="element1"></div>
-  <div style="flex-grow: 3;" class="element"></div>
-  <div style="flex-grow: 4;" class="element"></div>
+  <div style= "flex: 0 0 200px;" class="element border"></div>
+  <div style= "flex: 0 0 200px;" class="element border"></div>
+  <div style="flex-grow: 2;" class="element1 border"></div>
+  <div style="flex-grow: 2;" class="element1 border"></div>
+  <div style="flex-grow: 3;" class="element border"></div>
+  <div style="flex-grow: 4;" class="element border"></div>
+  <div style="flex-grow: 4;" class="element border"></div>
+  <div style="flex-grow: 4;" class="element border"></div>
 </body>
 
 </html>
