@@ -3,252 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Document</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="img/snake.svg">
   <style>
-    body {
-      max-width: 1200px;
-      margin: 20px auto;
-      background-color: rgb(144, 165, 183);
-      padding: 20px;
-      /* font-family: Lato, Verdana, Geneva, sans-serif; */
-      font-family: 'Courier New', Courier, monospace;
-    }
-
-    a {
-      display: inline-block;
-      padding: 5px;
-      border-radius: 10px;
-      color: black;
-      text-decoration: none;
-      background-color: aquamarine;
-      margin-bottom: 3px;
-      font-family: Lato, Verdana, Geneva, sans-serif;
-    }
-    .catGalery a {
-      display: inline-block;
-      padding: 0;
-      border-radius: 0px;
-      color: black;
-      text-decoration: none;
-      background-color: transparent;
-      margin-bottom: 0px;
-      border: 1px solid rgb(210, 208, 208);
-      border-left: none;
-      border-bottom: none;
-      padding: 10px;
-      height: 68px;
-    }
-
-    a:hover {
-      background-color: aqua;
-    }
-    .catGalery a:hover {
-      background-color: transparent;
-    }
-
-    .teal {
-      background-color: teal;
-    }
-
-    .witeText {
-      color: white;
-    }
-
-    #PZ1 {
-      background-color: hsl(35, 100%, 50%);
-    }
-
-    #PZ1:hover {
-      background-color: aqua;
-    }
-
-    p {
-      /* font: [font-style | font-variant | font-weight | font-stretch] font-size [/line-height] font-family | inherit */
-      font: normal 16px/20px Tahoma;
-      text-align: justify;
-
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    .dotted {
-      text-decoration: underline dotted;
-    }
-
-    .big-first-letter p::first-letter {
-      font-size: 20px;
-    }
-
-    p::selection {
-      background-color: brown;
-      color: aliceblue;
-    }
-
-    .experiment {
-      /* list-style-type: decimal (по умолчанию, можно не 
- указывать) | decimal-leading-zero | armenian | 
- georgian | lower-alpha | lower-greek | lower-latin |
- lower-roman | upper-alpha | upper-latin | 
- upper-roman */
-      list-style-type: none;
-      list-style-image: url(img/snake.svg);
-      /* Поставить маркер внутрь элемента (по умолчанию снаружи) */
-      list-style-position: inside;
-      /* list-style: list-style-type list-style-position 
- list-style-image;
- */
-    }
-
-    .experiment li {
-      height: 25px;
-    }
-
-    .experiment li:hover {
-      list-style-image: url(img/snake2.svg);
-    }
-    blockquote {
-      margin: 20px auto;
-      width: 400px;
-      text-align: center;
-      position: relative;
-    }
-    blockquote::before {
-      position: absolute;
-      left: -30px;
-      content: '<<';
-    }
-    blockquote::after {
-      content: '>>';
-      right: -30px;
-      position: absolute;
-    }
-    .radius {border-radius: 20px;}
-    img:hover {
-      opacity: 0.5;
-    }
-    .shadow {box-shadow: -6px -6px 6px #a7a7a7;}
-    .around-shadow {
-      box-shadow: 0 0 8px 
-      rgba(0, 0, 0, 0.65);
-      }
-
-      /* background-color: red | #ff0000 | #f00 | 
- rgb(255, 0, 0) | 
- rgba(255, 0, 0, .7) | 
- transparent (по умолчанию */
- 
-      /* background-image: none (по умолчанию)| 
- url(путь_к_изображению.расширение) */
-
-      /* backround-repeat: repeat (по умолчанию) | 
- no-repeat | repeat-x | repeat-y | 
- space | round  */
-
-      /* background-position: [left | center | right | % | px, 
- em, pt и др.] 
- [top | center | bottom | % | px,
- em, pt и др. */
-
-      /* background-size: [ размер в px, pt, em, rem и др. | % |
- auto ]{1,2} | cover | contain */
-
-      /* background-attachment fixed | scroll | local */
-
-      /* background-origin: padding-box | border-box | content-box */
-
-      /* background-clip: padding-box | border-box (по умолчанию) | content-box | text */
-
-      /* background: background-image || 
- background-position/background-size || 
- background-repeat || 
- background-attachment ||
- background-origin || 
- background-clip || 
- background-color */
-
-      #rools {
-        background: url(img/original.jpg) 82% 26%/234px no-repeat, url(img/original.jpg) 28% 26%/234px no-repeat;
-        
-      }
-
-    .box {
-      width: 120px;
-      height: 120px;
-      box-shadow:
-        inset 0 0 6px 0 #c000ff,
-        0 0 0 3px #c000ff,
-        0 0 6px 3px #c000ff,
-        0 0 0 7px #18191C,
-        0 0 0 10px #6e4aff,
-        0 0 6px 10px #6e4aff,
-        0 0 0 14px #18191C,
-        0 0 0 17px #c000ff,
-        0 0 6px 17px #c000ff;
-    }
-    .square {
-      display: inline-block;
-    }
-    .circle {
-      display: inline-block;
-      margin-left: 60px;
-      border-radius: 50%;
-    }
-    .catGalery {
-      border: 1px solid rgb(210, 208, 208);
-      width: 512px;
-      margin: 50px auto;
-    }
-
-    .layout {
-      text-transform: uppercase;
-      margin: 50px auto;
-      max-width: 800px;
-      color: white;
-      font-weight: bold;
-    }
-
-    .layout header {
-      background-color: #923158;
-      padding: 20px 40px;
-    } 
-    .layout nav, .layout footer {
-      background-color: #6e1237;
-      padding: 10px 40px;
-      margin: 10px 0;
-    }
-    .layout aside, .layout main {
-      background-color: #b65b80;
-      padding: 20px 40px;
-    }
-    .layout .flex div aside {
-      margin-bottom: 10px;
-    }
-    .layout section {
-      background-color: #db92af;
-      padding: 5px 40px 60px;
-      margin: 10px 0;
-    }
-    .layout main {
-      width: 600px;
-    }
-    .layout .flex {
-      display: flex;
-      gap: 10px;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start
-    }
-    .layout .vertical{
-      writing-mode: vertical-lr;
-      text-orientation: upright;
-    }
+    /* flex: flex-grow flex-shrink flex-basis */
+    /* grid-area: row-start / column-start / row-end / column-end */
   </style>
   <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" media="screen and (max-width:600px)" href="max600.css"> -->
 </head>
 
 <body>
@@ -264,18 +28,80 @@
   </p>
 
   <pre aria-label="Изображение кота, собранное из текстовых символов.">
-              /\„„./\
-             (='•'=  )
-             (") „. (")
-              \,\„„/,/
-              │„„. „│
-              /„/„\„\
-             („) ''(„)
-                 ((
-                  ))
-                 ((
-  </pre>
+ /\„„./\
+(='•'=  )
+(") „. (")
+ \,\„„/,/
+ │„„. „│
+ /„/„\„\
+(„) ''(„)
+    ((
+    ))
+    ((</pre>
 
+  <div class="watch">
+    <div class="seconds"></div>
+    <div class="minutes"></div>
+    <div class="hours"></div>
+    <div class="center"></div>
+    <div class="twelv">12</div>
+    <div class="twelv one">1</div>
+    <div class="twelv two">2</div>
+    <div class="three">3</div>
+    <div class="six">6</div>
+    <div class="nine">9</div>
+  </div>
+
+  <div class="onMobile">
+    <p>На ПК здесь коты и таблица</p>
+  </div>
+
+  <table>
+    <caption>Заголовок таблицы</caption>
+    <colgroup>
+      <col span="1" class="col-1">
+      <col span="2" class="col-2">
+      <col span="2" class="col-3">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>sfs</th>
+        <th>fgfdg</th>
+        <th>fsgsdf</th>
+        <th>fsddsf</th>
+        <th>gfdsgfg</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="2">jkldjfglk</th>
+        <td>fgkldjlkdf</td>
+        <td id="uniq">dfjlk</td>
+        <td>jlkdf</td>
+        <td>kljlkj</td>
+      </tr>
+      <tr>
+        <td colspan="2">lkjlkj</td>
+        <td>jlkjlkj</td>
+        <td>jl</td>
+      </tr>
+      <tr>
+        <th colspan="3">jlkjlk</th>
+        <td>wertwer</td>
+        <td>werwer</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>sfs</th>
+        <th>fgfdg</th>
+        <th>fsgsdf</th>
+        <th>fsddsf</th>
+        <th>gfdsgfg</th>
+      </tr>
+    </tfoot>
+  </table>
+  
   <div class="catGalery">
     <h2 style="text-align: center;">Cats Galery</h2>
     <hr style="border-color: #ffffff;">
@@ -296,7 +122,7 @@
     <nav>menu</nav>
     <div class="flex">
       <div>
-        <aside>aside1</aside>
+        <aside class="a1">aside1</aside>
         <aside>aside2</aside>
       </div>
       <main>
@@ -336,7 +162,20 @@
   <a class="teal witeText" href="https://doka.guide/html/flow/" target="_blank">Поток документа</a>
   <a class="teal witeText" href="https://doka.guide/css/box-model/" target="_blank">Блочная модель</a>
   <a class="teal witeText" href="https://wp-kama.ru/id_5875/30-css-selektorov.html" target="_blank">CSS селекторы</a>
-
+  <a class="teal witeText" href="https://cubic-bezier.com/" target="_blank">cubic-bezier</a>
+  <a class="teal witeText" href="https://doka.guide/css/animation-timing-function" target="_blank">Функции времени</a>
+  <a class="teal witeText" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style" target="_blank">3D трансформации</a>
+  <a class="teal witeText" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d" target="_blank">Кубик</a>
+  <a class="teal witeText" href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index" target="_blank">z-index</a>
+  <a class="teal witeText" href="https://disk.yandex.ru/d/k3SZF77ZuylnuA" target="_blank">Для Давида</a>
+  <a class="teal witeText" href="https://iksweb.ru/tools/generator-table-html" target="_blank">Генератор таблиц</a>
+  <a class="teal witeText" href="border.html" target="_blank">Анимированная рамка</a>
+  <a class="teal witeText" href="pseudo.html" target="_blank">Блочная модель, псевдоэлементы</a>
+  <a class="teal witeText" href="https://habr.com/ru/companies/ruvds/articles/501634/" target="_blank">min, max, clamp</a>
+  <a class="teal witeText" href="https://cssgrid-generator.netlify.app/" target="_blank">Grid generator</a>
+  <a class="teal witeText" href="https://cssgridgarden.com/#ru" target="_blank">Игра в Grid</a>
+  <a class="teal witeText" href="https://colorlib.com/wp/cat/portfolio/" target="_blank">Дизайны портфолио</a>
+  
   <div>
     <h2>Списки</h2>
     <ul class="experiment">
@@ -419,7 +258,7 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit, nesciunt numquam quasi nobis
           exercitationem aliquam ab ex? Repellat tempore alias saepe dolore magnam ipsum corrupti provident et tenetur
-        minima!</p>
+          minima!</p>
       <h3 style="clear: both;">Заголовок 3-го уровня</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit, nesciunt numquam quasi nobis
@@ -429,6 +268,29 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit, nesciunt numquam quasi nobis
         exercitationem aliquam ab ex? Repellat tempore alias saepe dolore magnam ipsum corrupti provident et tenetur
         minima!</p>
+ 
+      <div class="menu">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li>
+            <a href="#">category</a>
+            <ul style="width: 83.4px; top: 100%;">
+              <li><a style="border-top: none;" href="#">man</a></li>
+              <li>
+                <a href="#">wooman</a>
+                <ul class="inner">
+                  <li><a href="#">dress</a></li>
+                  <li><a href="#">pants</a></li>
+                  <li><a href="#">shoes</a></li>
+                </ul>
+              </li>
+              <li><a href="#">kids</a></li>
+            </ul>
+          </li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
       <h5>Заголовок 5-го уровня</h5>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit, nesciunt numquam quasi nobis
         exercitationem aliquam ab ex? Repellat tempore alias saepe dolore magnam ipsum corrupti provident et tenetur
@@ -458,6 +320,7 @@
     </ol>
   </div>
 
+  
 </body>
 
 </html>
