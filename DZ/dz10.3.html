@@ -21,7 +21,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             overflow: hidden;
-            
+
             /* align-content: center; */
 
         }
@@ -29,11 +29,15 @@
         .block1 {
             text-align: center;
         }
-        .form {
-            
-        display: flex;
 
+        .form {
+
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly
         }
+        .ryad {
+        display:block;}
     </style>
 </head>
 
@@ -42,7 +46,7 @@
 
         <form class="form" action="#">
             <div class="block1">
-                <label >Registration form</label> <br> <br>
+                <label>Registration form</label> <br> <br>
                 <input type="text" name="username" placeholder="Username">
                 <input type="email" name="email" placeholder="Email">
                 <div class="passcontrol">
@@ -53,7 +57,25 @@
 
             </div>
             <div>
-                <label > Personal details</label>
+                <div class="registr">
+                    <label> Personal details</label> <br> <br>
+                    <div class="ryad">
+
+                        <input type="text" name="firstname" placeholder="First Name">
+                        <input type="text" name="lastname" placeholder="Last name">
+                    </div>
+                </div>
+                <div>
+                    <select name="gender">
+                        <option name="gender" value="male">Male</option>
+                        <option name="gender" value="female">Female</option>
+                        <option name="gender" value="other">Othver</option>
+
+                    </select>
+
+                    <input type="date" name="pass2" placeholder="Confirm Password">
+
+                </div>
 
 
             </div>

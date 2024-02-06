@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+        }
+
+        .grid-container {
+            width: 900px;
+            padding: 15px;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 5px 20px #ccc;
+        }
+
+        .form {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 1.5fr 1.5fr 1fr 1fr 0.3fr 1fr 1fr 0.5fr;
+            grid-template-rows: 1fr 0.5fr 1fr 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        }
+
+        .registr {
+            text-align: center;
+            grid-area: 1/2/4/7;
+        }
+
+        .username {
+            text-align: center;
+            grid-area: 3/2/4/7;
+        }
+
+        .emailreg {
+            text-align: center;
+            grid-area: 5/2/6/7;
+        }
+
+        .password {
+            text-align: center;
+            grid-area: 7/2/8/4;
+        }
+
+        .passwordconf {
+            text-align: center;
+            grid-area: 7/5/8/7;
+        }
+
+        .check1 {
+            grid-area: 9/1/10/3;
+        }
+
+        .check2 {
+            grid-area: 10/1/11/3;
+        }
+
+        .personal {
+            text-align: center;
+            grid-area: 1/9/2/11
+        }
+
+        .firstname {
+            text-align: center;
+            grid-area: 3/9/4/11;
+        }
+
+        .lastname {
+            text-align: center;
+            grid-area: 3/12/4/14;
+        }
+
+        .gender {
+
+            grid-area: 5/9/6/11;
+        }
+
+        .date {
+            grid-area: 5/12/6/14;
+        }
+        .send {
+        grid-area: 13/11/14/14;}
+    </style>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <form class="form" action="DZ/card_result.html">
+            <label class="registr">Registration form</label>
+            <input class="username" type="text" name="username" placeholder="Username">
+            <input class="emailreg" type="email" name="email" placeholder="Email">
+            <input class="password" type="password" name="pass" placeholder="Password" min="00000000">
+            <input class="passwordconf" type="password" name="pass2" placeholder="Confirm Password">
+            <input class="check1" type="checkbox" name="">
+            <input class="check2" type="checkbox" name="">
+
+            <label class="personal"> Personal details</label>
+            <input class="firstname" type="text" name="firstname" placeholder="First Name">
+            <input class="lastname" type="text" name="lastname" placeholder="Last name">
+            <select class="gender" name="gender">
+                <option name="gender" value="male">Male</option>
+                <option name="gender" value="female">Female</option>
+                <option name="gender" value="other">Othver</option>
+            </select>
+            <input class="date" type="date" name="pass2" placeholder="Confirm Password">
+            <input class="send" type="submit" value="Send">
+        </form>
+    </div>
+</body>
+
+</html>
