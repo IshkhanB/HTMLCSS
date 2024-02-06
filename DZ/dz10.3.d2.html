@@ -24,63 +24,79 @@
         .form {
             display: grid;
             grid-template-columns: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 1.5fr 1.5fr 1fr 1fr 0.3fr 1fr 1fr 0.5fr;
-            grid-template-rows: 1fr 0.5fr 1fr 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
         }
 
         .registr {
             text-align: center;
             grid-area: 1/2/4/7;
         }
-
+        
         .username {
+            border-width: 0;
+            border-bottom: 1px solid black;
             text-align: center;
             grid-area: 3/2/4/7;
         }
-
+        
         .emailreg {
+            border-width: 0;
+            border-bottom: 1px solid black;
             text-align: center;
             grid-area: 5/2/6/7;
         }
-
+        
         .password {
+            border-width: 0;
+            border-bottom: 1px solid black;
             text-align: center;
             grid-area: 7/2/8/4;
         }
-
+        
         .passwordconf {
+            border-width: 0;
+            border-bottom: 1px solid black;
             text-align: center;
             grid-area: 7/5/8/7;
         }
-
+        
         .check1 {
             grid-area: 9/1/10/3;
         }
-
+        
         .check2 {
             grid-area: 10/1/11/3;
         }
-
+        
         .personal {
             text-align: center;
-            grid-area: 1/9/2/11
+            grid-area: 1/9/2/14
         }
-
+        
         .firstname {
+            border-width: 0;
+            border-bottom: 1px solid black;
             text-align: center;
             grid-area: 3/9/4/11;
         }
 
         .lastname {
+            border-width: 0;
+            border-bottom: 1px solid black;
             text-align: center;
             grid-area: 3/12/4/14;
         }
 
         .gender {
+            border-width: 0;
+            border-bottom: 1px solid black;
 
             grid-area: 5/9/6/11;
         }
 
         .date {
+            border-width: 0;
+            border-bottom: 1px solid black;
             grid-area: 5/12/6/14;
         }
         .send {
@@ -91,7 +107,7 @@
 
 <body>
     <div class="grid-container">
-        <form class="form" action="DZ/card_result.html">
+        <form class="form" action="card_result.html">
             <label class="registr">Registration form</label>
             <input class="username" type="text" name="username" placeholder="Username">
             <input class="emailreg" type="email" name="email" placeholder="Email">
