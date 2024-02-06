@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dz_10/2</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            padding: 20px;
+            width: 900px;
+            height: 600px;
+            box-shadow: 0 4px 16px #ccc;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+            
+            /* align-content: center; */
+
+        }
+
+        .block1 {
+            text-align: center;
+        }
+        .form {
+            
+        display: flex;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form class="form" action="#">
+            <div class="block1">
+                <label >Registration form</label> <br> <br>
+                <input type="text" name="username" placeholder="Username">
+                <input type="email" name="email" placeholder="Email">
+                <div class="passcontrol">
+                    <br>
+                    <input type="password" name="pass" placeholder="Password">
+                    <input type="password" name="pass2" placeholder="Confirm Password">
+                </div>
+
+            </div>
+            <div>
+                <label > Personal details</label>
+
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
