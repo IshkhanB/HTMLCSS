@@ -105,6 +105,10 @@
     .send {
       grid-area: 9 /5 / 10/ 7;
     }
+    .sht {
+      text-align: center;
+      grid-area: 3 / 5 / 4/ 6;
+    }
   </style>
 </head>
 
@@ -117,7 +121,8 @@
         min="1111111111111111" max="9999999999999999"> <!-- как использовать  pattern="[0-9]" -->
 
       <label class="numbername" for="number"> <b>Месяц/Год</b> </label>
-      <input class="mount" type="number" name="number" id="number" placeholder="Месяц" min="1" max="12">/
+      <input class="mount" type="number" name="number" id="number" placeholder="Месяц" min="1" max="12">
+      <b class="sht">/</b>
       <input class="year" type="number" name="number" id="number" placeholder="Год" min="1951" max="2099">
 
       <label class="name" for="name"><b>Имя карты</b> </label>
