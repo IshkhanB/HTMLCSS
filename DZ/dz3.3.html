@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .box {
+    /* .box {
+      width: 900px;
       display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      width: 90%;
+      margin: 0 auto;
+      background-color: antiquewhite;
+    }
+
+    .aside {
+      width: max-content;
+      display: flex;
+      flex-direction: column;
+
     }
 
     .aside div {
@@ -14,31 +30,163 @@
       margin: 10px;
       background-color: blueviolet;
     }
-    .section div {
-      
+
+    .section {
+      width: max-content;
       display: flex;
+      flex-direction: column;
+
+
+    }
+
+    .section div {
       padding: 10px;
       margin: 10px;
       background-color: blueviolet;
+    } */
+    body {
+      padding: 10px;
+      margin: 5px auto;
+      max-width: 1200px;
+    
     }
     
+    .box {
+      
+      background-color:#f5f5f5;
+      max-width: 900px;
+      margin: 5px auto;
+      padding: 10px 0  10px 0;
+    }
+    
+    .header {
+      box-sizing: border-box;
+      margin:  auto;
+      padding:  20px;
+      width: 95%;
+      background-color: #923158;
+    }
+    
+    .menu {
+      box-sizing: border-box;
+      margin: 10px auto;
+      padding:  5px 20px 5px 20px;
+      width: 95%;
+      background-color: #6e1237;
+    }
+    
+    .content {
+      box-sizing: border-box;
+      gap: 10px;
+      display: flex;
+      /* width: 90%; */
+      
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 10px auto;
+      padding: 0 0 0 0 ;
+      width: 95%;
+      
+    }
+    
+    .aside {
+      
+      box-sizing: border-box;
+      width: 150px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .aside1 {
+      box-sizing: border-box;
+
+      padding: 10px;
+      margin: 0;
+      background-color: #b65b80;
+    }
+
+    .aside2 {
+      padding: 10px 10px 40px;
+      margin: 10px 0 0 0 ;
+      box-sizing: border-box;
+      background-color: #b65b80;
+    }
+
+    .main {
+      /* width: max-content; */
+      box-sizing: border-box;
+      width: 600px;
+      padding: 20px;
+      background-color: #b65b80;
+    }
+
+    .section {
+      box-sizing: border-box;
+      /* margin: 0 auto; */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section1 {
+      box-sizing: border-box;
+      padding: 5px 40px 60px;
+      margin: 10px;
+      background-color: #db92af;
+    }
+
+    .aside3 {
+      box-sizing: border-box;
+      /* transform: rotate(90deg); */
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      padding: 20px;
+      background-color: #b65b80;
+    }
+
+
+    .footer {
+      margin: 10px auto;
+      box-sizing: border-box;
+      padding:  5px 20px 5px 20px;
+      width: 95%;
+      background-color: #6e1237;
+
+    }
+    p {
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+    p::before {
+      content: "<< ";
+    }
+
+    p::after {
+      content: " >>";
+    }
   </style>
 </head>
-<body>
-  
-  <div class="box">
-    <div class="aside">
-      <div>Aside 1</div>
-      <div>Aside 2</div>
-    </div>
-    <div class="section">
-      <div>section 1</div>
-      <div>section 2</div>
-    </div>
-    <div class="aside3">
 
+<body>
+  <div class="box">
+    <header class="header"> <p>Header</p></header>
+    <div class="menu"><p>Menu</p></div>
+    <div class="content">
+      <div class="aside">
+        <div class="aside1">Aside 1</div>
+        <div class="aside2">Aside 2</div>
+      </div>
+      <div class="main"> <p>Main content</p>
+        <div class="section">
+          <div class="section1">section 1</div>
+          <div class="section1">section 2</div>
+        </div>
+      </div>
+      <div class="aside3"> Aside 3</div>
     </div>
-    
+    <footer class="footer"> Footer</footer>
   </div>
+
+
 </body>
+
 </html>
